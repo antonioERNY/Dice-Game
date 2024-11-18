@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dice.css">
+    <title>dice Roll Game</title>
+</head>
+<body>
+    <header>
+        <!-- left-side -->
+        <section class="player0 activePlayer">
+            <h1 class="p1-title">Player 1</h1>
+            <p class="final-score">Main Points</p>
+            <p class="main-number1" id="mainNumb0Id">20</p>
+            <div class="current-div">
+                <p class="current1">current Score</p>
+                <p class="curr-number-0" id="currNumber0Id">0</p>
+            </div>
+        </section>
+        <!-- middle-side -->
+        <section class="playerMid">
+            <button class="new-game btns">New Game</button>
+            <img src="img-0.png" alt="no image to display" class ="dice hide">
+            <div class="lastButtons">
+                <button class="roll btns">ROLL DICE</button>
+                <button class="hold btns">HOLD</button>
+            </div>
+        </section>
+        <!-- right-side -->
+        <section class="player1">
+            <h1 class="p2-title">Player2</h1>
+            <p class="final-score">Main Points</p>
+            <p class="main-number2" id="mainNumb1Id">40</p>
+            <div class="current-div">
+                <p class="current2">Current Score</p>
+                <p class="curr-number-1" id="currNumber1Id">0</p>
+            </div>
+        </section>
+        <!-- results -->
+         <section class="resultSec">
+            <button class="rules-btn">Game Rules</button>
+            <section class="view-rules hidden">
+                <button class="cancel-btn">x</button>
+                <p class="game-rules">
+                    1 - click the "Roll Dice" button to start playing the game
+                </p>
+                <p> 2 - if you roll a "1" the game will switch to the opposite player
+                </p>
+                <p> 3 - if you click "Hold" button: you will add your current score to your Main points, This will also switch to the other player
+                </p>
+                <p>4 - When the Main points reach 50 or above the current player will be the winner.
+                </p>
+            </section>
+         </section>
+    </header>
+
+    <script src="dice.js"></script>
+</body>
+</html>
